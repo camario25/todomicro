@@ -1,0 +1,256 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+button,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  letter-spacing: 0.05rem;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  background-color: white;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.gray {
+  color: #808080;
+}
+
+.lightgray {
+  color: #d3d3d3;
+}
+
+.gainsboro {
+  color: #dcdcdc;
+}
+
+h1 {
+  font-size: 1.3rem;
+  font-weight: normal;
+  color: #db4b54;
+}
+
+header {
+  padding: 2rem 2rem;
+}
+
+i {
+  color: #db4b54;
+}
+
+.icon-bold {
+  -webkit-text-stroke: 0.015rem black;
+}
+
+.tasks__form {
+  margin: 0rem 1rem;
+  padding: 0rem 1rem 1rem 1rem;
+  border-bottom: 0.02rem solid #d3d3d3;
+}
+
+.tasks-form__focus {
+  border-bottom: 0.02rem solid #db4b54;
+}
+
+#task-text-input {
+  margin-left: 1rem;
+  border: 0rem none;
+  font-size: 1rem;
+}
+
+#task-text-input.red::placeholder {
+  color: #db4b54;
+}
+
+.hr1 {
+  border: 0.02rem solid #d3d3d3;
+}
+
+.tasks-add-task__button {
+  color: #db4b54;
+  float: right;
+}
+
+.task-list-item {
+  margin: 0rem 1rem;
+  padding: 1rem 1rem 1rem 0rem;
+  border-bottom: 0.02rem solid #d3d3d3;
+}
+
+.task-list-item:hover,
+.task-list-item:hover > button {
+  background-color: #ededed;
+}
+
+.task-list-item:visited,
+.task-list-item:visited > button {
+  background-color: #f4f6ff;
+}
+
+.task-list-item:active,
+.task-list-item:active > button {
+  background-color: #f4f6ff;
+}
+
+.tasks-list-item__check-button {
+  margin-left: 1rem;
+}
+
+.task-list-item .task-text {
+  margin-left: 1.2rem;
+}
+
+.task-list-item__favorite-button {
+  float: right;
+}
+
+.finished-header {
+  display: flex;
+  margin: 0rem 1.07rem;
+  padding: 1rem 0rem;
+  border-bottom: 0.02rem solid #d3d3d3;
+}
+
+.finished-header .fas {
+  padding-left: 1.05rem;
+  color: #a9a9a9;
+}
+.finished-title {
+  padding-left: 1.25rem;
+  font-weight: normal;
+}
+
+.finished-tasks-list__list {
+  text-decoration: line-through;
+}

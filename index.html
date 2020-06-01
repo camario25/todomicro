@@ -1,0 +1,65 @@
+<!DOCTYPE htm>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Tasks</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/338f0daf06.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="app.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="tasks__title">
+        Tasks
+      </h1>
+    </header>
+    <main class="tasks__containter">
+      <form class="tasks__form" name="tasks__form" autocomplete="off">
+        <section class="tasks-add-task__container">
+          <label for="task-text-input">
+            <span class="icon"
+              ><i class="fas fa-plus" tabindex="0" aria-hidden="true"></i
+            ></span>
+          </label>
+          <input
+            type="text"
+            id="task-text-input"
+            class="red"
+            placeholder="Add a task"
+            aria-label="add-task"
+            tabindex="0"
+            autocomplete="off"
+          />
+          <button
+            type="submit"
+            class="tasks-add-task__button hidden"
+            aria-label="add-task-to-list"
+            tabindex="-1"
+          >
+            Add
+          </button>
+        </section>
+      </form>
+      <section class="tasks-list__container">
+        <ul class="tasks-list__list"></ul>
+      </section>
+      <section class="finished-tasks-list__container hidden">
+        <div class="finished-header">
+          <button type="button" class="icon">
+            <i class="fas fa-chevron-down" tabindex="0" aria-hidden="true"></i>
+          </button>
+          <h2 class="finished-title">Finished</h2>
+        </div>
+
+        <ul class="finished-tasks-list__list"></ul>
+      </section>
+    </main>
+  </body>
+  <script src="main.js"></script>
+</html>
