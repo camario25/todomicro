@@ -238,12 +238,11 @@ i {
 .finished-header {
   display: flex;
   margin: 0rem 1.07rem;
-  padding: 1rem 0rem;
+  padding: 1rem 0rem 1rem 1rem;
   border-bottom: 0.02rem solid #d3d3d3;
 }
 
 .finished-header .fas {
-  padding-left: 1.05rem;
   color: #a9a9a9;
 }
 .finished-title {
@@ -253,4 +252,14 @@ i {
 
 .finished-tasks-list__list {
   text-decoration: line-through;
+}
+
+.finished-list-closed {
+  transform: rotate(-90deg);
+  transition: 0.1s linear;
+}
+
+.finished-list-open {
+  transform: rotate(0deg);
+  transition: 0.1s linear;
 }

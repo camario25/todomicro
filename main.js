@@ -111,10 +111,20 @@ window.onload = function (e) {
     }
   }
 
-  function toggleFinished(e) {
-    const eventTarget = e.target;
-    faIcon.classList.toggle("fa-chevron-right");
-    faIcon.classList.toggle("fa-chevron-down");
+  function toggleFinished() {
+    const chevronIcon = finishedHeader.querySelector("i");
+    if (chevronIcon.classList.contains("finished-list-closed")) {
+      console.log("yes");
+      chevronIcon.classList.replace(
+        "finished-list-closed",
+        "finished-list-open"
+      );
+    } else if (chevronIcon.classList.contains("finished-list-open")) {
+      chevronIcon.classList.replace(
+        "finished-list-open",
+        "finished-list-closed"
+      );
+    }
     finishedTaskList.classList.toggle("hidden");
   }
 
